@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "dataset_id": "on005946",
-  "source": "openneuro",
-  "source_id": "ds005946",
+  "pipeline_stage": "enriched",
   "title": "ERC_CoG PROMENADE - WP2 - MetaImagery (Metaphor and Mental Imagery)",
+  "license": "CC0",
+  "dataset_type": "derivative",
   "authors": {
     "Federico Frau": {},
     "Paolo Canal": {},
@@ -11,26 +11,90 @@
     "Chiara Pompei": {},
     "Valentina Bambini": {}
   },
-  "license": "CC0",
-  "dataset_type": "derivative",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds005946.v1.0.1",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on005946",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on005946",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds005946",
+      "identifier_type": "DOI",
+      "relation_type": "IsVersionOf"
     }
-  ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.8.0",
-  "recording_modality": [
-    "eeg"
-  ],
-  "datatypes": [
-    "eeg"
   ],
   "funding_references": [
     {
-      "funder_name": "This work received support from the European Research Council under the EU’s Horizon Europe program ERC Consolidator Grant “PROcessing MEtaphors: Neurochronometry Acquisition and Decay (PROMENADE)” [101045733]."
+      "funder_name": "European Research Council",
+      "award_number": "101045733",
+      "award_title": "PROcessing MEtaphors: Neurochronometry Acquisition and Decay (PROMENADE)"
     }
-  ]
+  ],
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".fdt",
+    ".json",
+    ".m",
+    ".md",
+    ".set",
+    ".tsv"
+  ],
+  "description": "This EEG dataset comprises neurophysiological recordings from 39 Italian-speaking participants performing a picture-matching task with four types of cues (Physical, Imagery, Literal, and Metaphorical) to investigate how different representational formats influence visual processing. The study examines the neural correlates of metaphorical language comprehension and mental imagery by measuring event-related potentials during matching and mismatching conditions. Data were collected in 2023 using a 64-channel active EEG system with preprocessing including filtering, re-referencing, and ICA-based artifact removal.",
+  "methods_description": "EEG data were acquired using a Brain Vision ACTICHAMP 64-electrode system. Participants were seated 85 cm from an EIZO V2490 monitor in a non-shielded laboratory setting. Responses were collected via a Cedrus RB-530 response box. Data were preprocessed offline with high-pass (0.10 Hz) and low-pass (45 Hz) filtering using a 4th order IIR Butterworth filter with DC removal, re-referenced to the average of mastoid electrodes (TP9, TP10), and underwent ICA decomposition for eye-artifact removal. EEG epochs were extracted from 1.87 seconds pre-stimulus to 3.17 seconds post-stimulus onset (5.04 seconds total). The picture-matching task employed a block design with four experimental versions counterbalancing the presentation order of cue types: (i) Literal-Metaphorical-Physical-Imagery, (ii) Metaphorical-Literal-Physical-Imagery, (iii) Imagery-Physical-Literal-Metaphorical, and (iv) Imagery-Physical-Metaphorical-Literal. Item presentation was pseudorandomized to counterbalance matching and mismatching conditions, with inter-stimulus intervals of 700 ms (Physical, Literal, Metaphorical) or 3000 ms (Imagery).",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "event-related potentials"
+    },
+    {
+      "term": "metaphor comprehension"
+    },
+    {
+      "term": "mental imagery"
+    },
+    {
+      "term": "picture matching"
+    },
+    {
+      "term": "neurolinguistics"
+    },
+    {
+      "term": "semantic processing"
+    },
+    {
+      "term": "block design"
+    },
+    {
+      "term": "counterbalanced design"
+    },
+    {
+      "term": "visual processing"
+    },
+    {
+      "term": "semantic comprehension"
+    },
+    {
+      "term": "Italian language"
+    }
+  ],
+  "source_hash": "f7c07854f628eb5eb63de3d3a2b3cc4c7ff840f4cceaa99fe948f1d7cc2efa8c"
 }
