@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "ERC_CoG PROMENADE - WP2 - MetaImagery (Metaphor and Mental Imagery)",
+  "description": "This derivative EEG dataset from the ERC PROMENADE project investigates how different types of cues (physical, mental imagery, literal, and metaphorical) influence the neural processing of target pictures in a picture-matching task. Comprising 39 participants and 238 files (14.8 GiB), the dataset includes preprocessed EEG data with high-pass (0.10 Hz) and low-pass (45 Hz) filtering, ICA-based artifact removal, and behavioral measures of task accuracy and individual differences in vocabulary and mental imagery abilities. The study examines event-related potentials as participants judge whether target pictures match preceding cue information across four experimental conditions. The study was approved by the Ethics Committee of the Department of Brain and Behavioral Sciences of the University of Pavia (protocol number 123/2023).",
+  "methods_description": "EEG data were acquired using a Brain Vision ACTICHAMP system with 64 electrodes. Preprocessing included high-pass (0.10 Hz) and low-pass (45 Hz) filtering with 4th order IIR Butterworth filters, re-referencing to average mastoid activity (TP9 and TP10), and ICA-based removal of eye-related artifacts. Data were epoched from 1.87 seconds before to 3.17 seconds after target picture onset (5.04 second epochs). Participants completed a picture-matching task with four cue types (Physical, Imagery, Literal, Metaphorical) in a counterbalanced block design with inter-stimulus intervals of 700 ms (Physical, Literal, Metaphorical) or 3000 ms (Imagery).",
   "license": "CC0",
   "dataset_type": "derivative",
   "authors": {
@@ -11,12 +13,39 @@
     "Chiara Pompei": {},
     "Valentina Bambini": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds005946.v1.0.1",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "EEG"
     },
+    {
+      "term": "event-related potentials"
+    },
+    {
+      "term": "metaphor processing"
+    },
+    {
+      "term": "mental imagery"
+    },
+    {
+      "term": "picture matching task"
+    },
+    {
+      "term": "neurolinguistics"
+    },
+    {
+      "term": "semantic processing"
+    },
+    {
+      "term": "preprocessing"
+    },
+    {
+      "term": "pragmatics"
+    },
+    {
+      "term": "artifact removal"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on005946",
       "identifier_type": "URL",
@@ -31,6 +60,11 @@
       "identifier": "10.18112/openneuro.ds005946",
       "identifier_type": "DOI",
       "relation_type": "IsVersionOf"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds005946.v1.0.1",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -41,12 +75,12 @@
     }
   ],
   "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "15.9 GB (80 files)"
   ],
   "formats": [
     ".fdt",
@@ -54,47 +88,8 @@
     ".m",
     ".md",
     ".set",
-    ".tsv"
+    ".tsv",
+    ".yml"
   ],
-  "description": "This EEG dataset comprises neurophysiological recordings from 39 Italian-speaking participants performing a picture-matching task with four types of cues (Physical, Imagery, Literal, and Metaphorical) to investigate how different representational formats influence visual processing. The study examines the neural correlates of metaphorical language comprehension and mental imagery by measuring event-related potentials during matching and mismatching conditions. Data were collected in 2023 using a 64-channel active EEG system with preprocessing including filtering, re-referencing, and ICA-based artifact removal.",
-  "methods_description": "EEG data were acquired using a Brain Vision ACTICHAMP 64-electrode system. Participants were seated 85 cm from an EIZO V2490 monitor in a non-shielded laboratory setting. Responses were collected via a Cedrus RB-530 response box. Data were preprocessed offline with high-pass (0.10 Hz) and low-pass (45 Hz) filtering using a 4th order IIR Butterworth filter with DC removal, re-referenced to the average of mastoid electrodes (TP9, TP10), and underwent ICA decomposition for eye-artifact removal. EEG epochs were extracted from 1.87 seconds pre-stimulus to 3.17 seconds post-stimulus onset (5.04 seconds total). The picture-matching task employed a block design with four experimental versions counterbalancing the presentation order of cue types: (i) Literal-Metaphorical-Physical-Imagery, (ii) Metaphorical-Literal-Physical-Imagery, (iii) Imagery-Physical-Literal-Metaphorical, and (iv) Imagery-Physical-Metaphorical-Literal. Item presentation was pseudorandomized to counterbalance matching and mismatching conditions, with inter-stimulus intervals of 700 ms (Physical, Literal, Metaphorical) or 3000 ms (Imagery).",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "event-related potentials"
-    },
-    {
-      "term": "metaphor comprehension"
-    },
-    {
-      "term": "mental imagery"
-    },
-    {
-      "term": "picture matching"
-    },
-    {
-      "term": "neurolinguistics"
-    },
-    {
-      "term": "semantic processing"
-    },
-    {
-      "term": "block design"
-    },
-    {
-      "term": "counterbalanced design"
-    },
-    {
-      "term": "visual processing"
-    },
-    {
-      "term": "semantic comprehension"
-    },
-    {
-      "term": "Italian language"
-    }
-  ],
-  "source_hash": "f7c07854f628eb5eb63de3d3a2b3cc4c7ff840f4cceaa99fe948f1d7cc2efa8c"
+  "source_hash": "c7f40678b6839dd39a77a9a57f5c173c44a9c206a78250af5f24c5bb1e1e73a8"
 }
