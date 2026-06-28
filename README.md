@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on005946-blue)](https://doi.org/10.82901/nemar.on005946)
+
 The following is the README for the “ERC_CoG PROMENADE - WP2 - MetaImagery (Metaphor and Mental Imagery)” dataset
 
 \===================
